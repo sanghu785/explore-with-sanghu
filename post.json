@@ -1,0 +1,75 @@
+{
+    "posts": [
+        {
+            "id": "bali-beaches-2025",
+            "title": "Beautiful Beaches of Bali",
+            "date": "2025-03-10",
+            "category": "beaches",
+            "location": "Bali, Indonesia",
+            "content": [
+                "My journey to Bali was everything I had dreamed of and more. The crystal-clear waters and white sandy beaches captivated me from the moment I arrived.",
+                "I spent most of my time exploring the different beaches along the coast. Kuta Beach was bustling with activity, while Nusa Dua offered a more serene experience. The sunset views from Jimbaran Bay were absolutely breathtaking.",
+                "The local cuisine was another highlight of my trip. I tried various seafood dishes freshly caught that day, and the flavors were incredible. The grilled fish with Balinese spices is a must-try for anyone visiting.",
+                "Beyond the beaches, I explored the lush rice terraces of Tegallalang and visited the sacred monkey forest sanctuary in Ubud. The contrast between the coastal and inland areas of Bali provides a rich and diverse experience for travelers."
+            ],
+            "images": [
+                {
+                    "src": "images/bali-beach1.jpg",
+                    "alt": "Sunset at Kuta Beach"
+                },
+                {
+                    "src": "images/bali-beach2.jpg",
+                    "alt": "Crystal waters of Nusa Dua"
+                },
+                {
+                    "src": "images/bali-food.jpg",
+                    "alt": "Fresh seafood dinner"
+                }
+            ]
+        },
+        {
+            "id": "swiss-alps-2025",
+            "title": "Hiking the Swiss Alps",
+            "date": "2025-02-15",
+            "category": "mountains",
+            "location": "Interlaken, Switzerland",
+            "content": [
+                "The majestic Swiss Alps have been on my bucket list for years, and finally experiencing them in person was simply magical.",
+                "I spent a week hiking various trails around Interlaken and Lucerne. The panoramic views of snow-capped mountains and lush green valleys were worth every step of the challenging hikes.",
+                "The mountain villages were charming, with their traditional wooden chalets and friendly locals. I stayed in a small family-run bed and breakfast which offered authentic Swiss hospitality and delicious homemade breakfasts."
+            ],
+            "images": [
+                {
+                    "src": "images/swiss-mountains.jpg",
+                    "alt": "View from Jungfrau"
+                },
+                {
+                    "src": "images/swiss-village.jpg",
+                    "alt": "Traditional Swiss village"
+                }
+            ]
+        },
+        {
+            "id": "tokyo-lights-2025",
+            "title": "Tokyo City Lights",
+            "date": "2025-01-20",
+            "category": "cities",
+            "location": "Tokyo, Japan",
+            "content": [
+                "The vibrant energy of Tokyo is something that must be experienced to be truly understood. The city is a fascinating blend of ancient traditions and cutting-edge technology.",
+                "I was mesmerized by the neon lights of Shibuya and Shinjuku districts at night. The famous Shibuya Crossing, where thousands of people cross the intersection at once, is a spectacular sight that captures the organized chaos of urban Japan.",
+                "Despite being one of the most populous cities in the world, Tokyo offers moments of tranquility in its beautiful gardens and temples. I found peace in the early morning at Meiji Shrine before the crowds arrived."
+            ],
+            "images": [
+                {
+                    "src": "images/tokyo-night.jpg",
+                    "alt": "Tokyo skyline at night"
+                },
+                {
+                    "src": "images/tokyo-shrine.jpg",
+                    "alt": "Meiji Shrine"
+                }
+            ]
+        }
+    ]
+}
