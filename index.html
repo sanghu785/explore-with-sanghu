@@ -150,24 +150,12 @@
             color: #777;
         }
         
-        .post-categories {
-            display: flex;
-            gap: 0.5rem;
-            flex-wrap: wrap;
-        }
-        
         .blog-category {
             background-color: var(--secondary-color);
             color: white;
             padding: 0.2rem 0.5rem;
             border-radius: 4px;
             font-size: 0.8rem;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-        
-        .blog-category:hover {
-            background-color: var(--primary-color);
         }
         
         .blog-content {
@@ -353,14 +341,7 @@
             // Extract unique categories
             const categories = ['all'];
             allPosts.forEach(post => {
-                if (post.categories && Array.isArray(post.categories)) {
-                    post.categories.forEach(category => {
-                        if (!categories.includes(category)) {
-                            categories.push(category);
-                        }
-                    });
-                } else if (post.category && !categories.includes(post.category)) {
-                    // For backward compatibility with old posts
+                if (post.category && !categories.includes(post.category)) {
                     categories.push(post.category);
                 }
             });
@@ -522,17 +503,7 @@
             
             // Apply category filter if not 'all'
             if (currentCategory !== 'all') {
-                filteredPosts = filteredPosts.filter(post => {
-                    // Check if post has categories array
-                    if (post.categories && Array.isArray(post.categories)) {
-                        return post.categories.includes(currentCategory);
-                    } 
-                    // Backward compatibility with old posts
-                    else if (post.category) {
-                        return post.category === currentCategory;
-                    }
-                    return false;
-                });
+                filteredPosts = filteredPosts.filter(post => post.category === currentCategory);
             }
             
             // Apply search filter if there's a query
@@ -609,68 +580,13 @@
                 titleInfoElement.appendChild(metadataElement);
                 headerElement.appendChild(titleInfoElement);
                 
-                // Add categories container
-                const categoriesContainer = document.createElement('div');
-                categoriesContainer.className = 'post-categories';
-                
-                // Add multiple categories if available
-                if (post.categories && Array.isArray(post.categories)) {
-                    post.categories.forEach(category => {
-                        const categoryElement = document.createElement('span');
-                        categoryElement.className = 'blog-category';
-                        categoryElement.textContent = category.charAt(0).toUpperCase() + category.slice(1);
-                        
-                        // Make categories clickable
-                        categoryElement.addEventListener('click', function() {
-                            // Set the category filter to this category
-                            currentCategory = category;
-                            currentPage = 1;
-                            
-                            // Update active class for category links
-                            document.querySelectorAll('.category-link').forEach(link => {
-                                link.classList.remove('active');
-                            });
-                            const categoryLink = document.querySelector(`.category-link[data-category="${category}"]`);
-                            if (categoryLink) {
-                                categoryLink.classList.add('active');
-                            }
-                            
-                            // Refresh displayed posts
-                            displayPosts();
-                            window.scrollTo(0, 0);
-                        });
-                        
-                        categoriesContainer.appendChild(categoryElement);
-                    });
-                } 
-                // Backward compatibility with old posts that have a single category
-                else if (post.category) {
+                // Add category if available
+                if (post.category) {
                     const categoryElement = document.createElement('span');
                     categoryElement.className = 'blog-category';
                     categoryElement.textContent = post.category.charAt(0).toUpperCase() + post.category.slice(1);
-                    
-                    // Make category clickable
-                    categoryElement.addEventListener('click', function() {
-                        currentCategory = post.category;
-                        currentPage = 1;
-                        
-                        // Update active class for category links
-                        document.querySelectorAll('.category-link').forEach(link => {
-                            link.classList.remove('active');
-                        });
-                        const categoryLink = document.querySelector(`.category-link[data-category="${post.category}"]`);
-                        if (categoryLink) {
-                            categoryLink.classList.add('active');
-                        }
-                        
-                        displayPosts();
-                        window.scrollTo(0, 0);
-                    });
-                    
-                    categoriesContainer.appendChild(categoryElement);
+                    headerElement.appendChild(categoryElement);
                 }
-                
-                headerElement.appendChild(categoriesContainer);
                 
                 // Create post content
                 const contentElement = document.createElement('div');
