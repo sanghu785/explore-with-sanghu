@@ -4,7 +4,7 @@
             "id": "vietnam-hanoi-2022",
             "title": "Through the Heart of Hanoi,Vietnam",
             "date": "2022-12-20",
-            "category": "cities",
+            "category": ["asia", "cities", "vietnam"],
             "location": "Hanoi, Vietnam",
             "content": [
                 "The bag was packed. Not too heavy. Not too light. Just enough to carry stories waiting to be written. I checked for the essentials—passport, phone, and a few spare bills tucked away like secrets. Then, without looking back, I stepped out into the night and headed to Mumbai airport.",
@@ -30,7 +30,7 @@
             "id": "vietnam-hoi-an-2022",
             "title": "The Enchantment of Hoi An,Vietnam: Where Light and Love Intertwine",
             "date": "2022-12-22",
-            "category": "cities",
+            "category": ["asia", "cities", "vietnam"],
             "location": "Hoi-an, Vietnam",
             "content": [
                 "As the sun sets in Hoi An, thousands of colorful lanterns light up the ancient streets. Their warm glow reflects in the Thu Bon River, creating a scene straight from a fairytale.",
@@ -56,7 +56,7 @@
             "id": "vietnam-holang-bay-2022",
             "title": "The Magic of Halong Bay, Vietnam",
             "date": "2022-12-20",
-            "category": "landscapes",
+            "category": ["asia", "landscape", "vietnam"],
             "location": "holang bay, Vietnam",
             "content": [
                 "I'll never forget the first time I saw Halong Bay. Huge limestone islands rise from clear blue-green water as far as you can see. Our wooden boat sailed between these giant rocks, and I felt like I had entered a different world",
