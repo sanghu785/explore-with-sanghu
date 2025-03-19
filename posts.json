@@ -1,6 +1,32 @@
 {
     "posts": [
         {
+            "id": "vietnam-hanoi-2022",
+            "title": "Through the Heart of Hanoi,Vietnam",
+            "date": "2022-12-20",
+            "category": "cities",
+            "location": "Hanoi, Vietnam",
+            "content": [
+                "The bag was packed. Not too heavy. Not too light. Just enough to carry stories waiting to be written. I checked for the essentials—passport, phone, and a few spare bills tucked away like secrets. Then, without looking back, I stepped out into the night and headed to Mumbai airport.",
+                "The plane hummed as it lifted off the tarmac, pushing me away from the familiar and toward the unknown. Mumbai to Da Nang. Da Nang to Hanoi. The layover gave me time to think, but I wasn’t in the mood for thoughts. I wanted the rawness of the road, the smell of a new city, the rhythm of a place that had never known my footsteps.",
+                "Hanoi greeted me with the kind of chaos that feels alive. A web of motorbikes, voices, the scent of grilled meat curling through the air. I found my way to the Old Quarter, where time moves differently—slower in the morning mist, quicker when the streets come alive at night. The hostel was simple but welcoming, a traveler’s home. I dropped my bag, rented a bike, and let the city pull me in.",
+                "I rode through the streets with no destination, just movement. The wind carried laughter, the honking of bikes, the sizzling of street food. Hoàn Kiếm Lake glowed under the city lights, couples whispering on benches, old men playing chess like warriors of the past. I sat by the water, watching reflections dance like restless spirits.",
+                "Then there was Beer Street. A stretch of neon lights, plastic stools, and people from everywhere, gathered over cheap beer and the kind of conversations that only happen when no one knows your name. The beer was cold, the stories warmer. A local sat beside me, teaching me to say “Một, hai, ba… dzô!”—one, two, three… cheers! And so, we drank, to the night, to the road, to whatever lay ahead.",
+                "Morning came with the scent of bánh mì and the distant murmur of temple bells. I found myself at the Temple of Literature, tracing the history carved in stone. Later, I weaved through the Train Street, where life clings to the tracks, daring the passing locomotive. The smell of strong Vietnamese coffee led me into a tiny café, where time stood still in the swirl of condensed milk.",
+                "Hanoi was not a city to be seen. It was a city to be felt. And as the sun set again, painting the sky in hues of farewell, I knew I would carry a piece of it wherever the road took me next."
+            ],
+            "images": [
+                {
+                    "src": "images/hanoi1.jpg",
+                    "alt": "Hanoi, vietnam"
+                },
+                {
+                    "src": "images/hanoi2.jpg",
+                    "alt": "hanoi, vietnam"
+                }
+            ]
+        },
+        {
             "id": "vietnam-hoi-an-2022",
             "title": "The Enchantment of Hoi An,Vietnam: Where Light and Love Intertwine",
             "date": "2022-12-22",
